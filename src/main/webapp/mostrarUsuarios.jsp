@@ -1,5 +1,5 @@
 <%@page import="java.util.List"%>
-<%@page import="logica.Usuario"%>
+<%@page import="logica.Usuarios"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -10,9 +10,9 @@
     <body>
             <h1>Lista de Usuarios Registrados</h1>
             <%
-                List<Usuario> listaUsuarios = (List) request.getSession().getAttribute("listaUsuarios");
+                List<Usuarios> listaUsuarios = (List) request.getSession().getAttribute("listaUsuarios");
                 int count = 1;
-                for(Usuario usu: listaUsuarios){
+                for(Usuarios usu: listaUsuarios){
             %>
                     <h2>Cliente N°<%=count%></h2>
                     <ul>
