@@ -6,7 +6,7 @@
         <title>Formulario de usuario</title>
     </head>
     <body>
-        <h1>Datos del Usuario</h1>
+        <h1>Crear Usuario</h1>
         <form action="SvUsuarios" method="POST">
             <p><label for="nombre_usuario">Nombre: </label> <input type="text" id="nombre_usuario" name="nombre_usuario"></p>
             <p><label for="nombre_cuenta_usuario">Nombre de usuario: </label> <input type="text" id="nombre_cuenta_usuario" name="nombre_cuenta_usuario"></p>
@@ -19,6 +19,13 @@
         <p>Para ver los datos de los usuarios cargados presione el siguiente botón</p>
         <form action="SvUsuarios" method="GET">
             <button type="submit">Mostrar Usuarios</button>
+        </form>
+        
+        <h1>Editar Usuario</h1>
+        <p>Ingrese el id del usuario a editar</p>
+        <form action="SvEditar" method="GET">
+            <p><label for="id_usuario_edit">Id: </label> <input type="number" id="id_usuario_edit" name="id_usuario_edit"></p>
+            <button type="submit">Editar Usuario</button>
         </form>
         
         <h1>Eliminar Usuario</h1>

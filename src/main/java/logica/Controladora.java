@@ -18,5 +18,13 @@ public class Controladora {
     public void borrarUsuario(int id_eliminar) {
         controlPersis.borrarUsuario(id_eliminar);
     }
+
+    public Usuarios traerUsuario(int id_editar) {
+        return controlPersis.traerUsuario(id_editar);
+    }
+
+    public void editarUsuario(Usuarios usu) {
+        controlPersis.editarUsuario(usu);
+    }
    
 }
