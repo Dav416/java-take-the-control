@@ -16,6 +16,7 @@
             %>
                     <h2>Cliente N°<%=count%></h2>
                     <ul>
+                        <li>Id: <%=usu.getId_usuario()%></li>
                         <li>Nombre: <%=usu.getNombre_usuario()%></li>
                         <li>Nombre Usuario: <%=usu.getNombre_cuenta_usuario()%></li>
                         <li>Contraseña: <%=usu.getClave_usuario()%></li>

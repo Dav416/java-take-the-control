@@ -1,7 +1,6 @@
 package com.mycompany.java.take.the.control.servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -15,9 +14,7 @@ import logica.Usuarios;
 
 @WebServlet(name = "SvUsuarios", urlPatterns = {"/SvUsuarios"})
 public class SvUsuarios extends HttpServlet {
-Controladora control = new Controladora();
-    
-    
+    Controladora control = new Controladora();
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -63,6 +60,6 @@ Controladora control = new Controladora();
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }
